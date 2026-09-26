@@ -7,7 +7,7 @@ from datetime import datetime
 def dddh():
     # 启动子进程
     process = subprocess.Popen(
-        [sys.executable, "dddh.py"],
+        [sys.executable, "storm.py"],
         stdin=subprocess.PIPE,
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
@@ -21,7 +21,7 @@ def dddh():
 
     # 获取子脚本全部输出并等待结束
     stdout, stderr = process.communicate()
-    print("dddh 运行结果:\n", stdout)
+    print("storm 运行结果:\n", stdout)
     #print("Hello, World!")
 
 def wxcy():

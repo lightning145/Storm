@@ -2,8 +2,7 @@ name: Operation Storm
 
 on:
   schedule:
-    # 北京时间 12:00 等于 UTC 时间 04:00
-    - cron: '0 4 * * *'
+  - cron: '0 22 * * *'
   # 允许手动在界面触发测试
   workflow_dispatch:
 
